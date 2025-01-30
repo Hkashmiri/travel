@@ -11,7 +11,7 @@ body {
 
 header {
     background-color: #000;
-    color: green;
+    color: #6EC6D9;
     padding: 10px 0;
     text-align: center;
     position: fixed;
@@ -27,7 +27,7 @@ header a {
 }
 
 header a:hover {
-    color: green; 
+    color: 6EC6D9; 
 }
 
 section {
@@ -57,13 +57,13 @@ p {
 }
 
 a {
-    color: #4CAF50;
+    color: #6EC6D9;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #45a049;
+    color: #6EC6D9;
 }
 
 .about-image {
