@@ -34,8 +34,20 @@
         <p>&copy; 2025 Travel Adventure. All rights reserved. 
             <p><a href="aboutus.html">About Us</a></p>
             <p><a href="contactus.html">Customer Service</a></p>
-        </p>
-    </footer>
+        </p>    </footer>
+
+    <script>
+        function calculateTotal() {
+            const accommodationCost = parseFloat(document.getElementById('accommodation').value) || 0;
+            const transportationCost = parseFloat(document.getElementById('transportation').value) || 0;
+            const mealsCost = parseFloat(document.getElementById('meals').value) || 0;
+            const miscellaneousCost = parseFloat(document.getElementById('miscellaneous').value) || 0;
+
+            const totalCost = accommodationCost + transportationCost + mealsCost + miscellaneousCost;
+
+            document.getElementById('totalCost').textContent = totalCost.toFixed(2);
+        }
+    </script>
 
 </body>
 </html>
