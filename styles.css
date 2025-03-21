@@ -247,3 +247,42 @@ footer a {
 footer a:hover {
     color: #6EC6D9;
 }
+
+/* Ensure the auth container is below the header and visible */
+.auth-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    width: 320px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block; /* Ensure it's visible */
+    position: relative; /* Make sure it stays in place */
+    z-index: 10; /* Ensures it's not hidden behind other elements */
+}
+
+/* Ensure inputs and buttons are clearly visible */
+.auth-container input,
+.auth-container button {
+    display: block;
+    width: 90%;
+    margin: 10px auto;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* Make sure the header does not hide content */
+#main-header {
+    position: relative;
+    z-index: 100;
+    background: rgb(0, 0, 0);
+    padding: 15px;
+    text-align: center;
+}
+
+/* Ensure the body has enough space */
+body {
+    min-height: 100vh;
+    padding-top: 80px; /* Prevents elements from being hidden under the header */
+}
